@@ -1,6 +1,6 @@
-import { gql, useMutation } from "@apollo/client";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import { ImgInicial } from "../components/ImgInicial";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
@@ -35,7 +35,7 @@ export function Subscribe() {
           </h1>
           <p className="mt-4 text-gray-200 leading-relaxed">
             Projeto feito durante a semana do IgniteLab da Rocketseat,
-            utilizando várias tecnologias
+            utilizando GraphQL e ReactJs
           </p>
         </div>
         <div className="p-8 bg-gray-700 border border-gray-500 rounded">
@@ -68,7 +68,7 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img src="/src/assets/code-mockup.png" className="mt-10" alt=""></img>
+      <ImgInicial />
     </div>
   );
 }
